@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+     int num,n,b,c,d,sum=0;
+     cin>>num;
+     n=num;
+     while(n!=0)
+     {
+         b=n%1000;
+         c=b%100;
+         d=c%10;
+         sum+=d;
+         n/=10;
+     }
+     if(num%sum==0)
+     {
+         cout<<"Harshard number";
+     }
+     else
+     {
+         cout<<"Not Harshard Number";
+     }
+     
+        return 0;
+}
