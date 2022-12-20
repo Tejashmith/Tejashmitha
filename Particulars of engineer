@@ -1,0 +1,41 @@
+#include <iostream>
+#include <string> 
+using namespace std;
+class engineer 
+{    
+    public:     
+    string a;     
+    string e;     
+    int b,c,d;    
+    void name()     
+    {         
+        cout<<"Enter the first name = "<<endl;        
+        cin>>a;         
+        cout<<"Enter the identity number = "<<endl;         
+        cin>>b;         
+        cout<<"Enter the age = "<<endl;        
+        cin>>c;         
+        cout<<"Enter the salary = "<<endl;         
+        cin>>d;         
+        cout<<"Enter the designation of the Engineer: "<<endl;         
+        cin>>e;         
+        cout<<"Displaying the particulars of the Engineer"<<endl;         
+        cout<<"Name = "<<a<<endl<<"Identity Number = "<<b<<endl<<"Age = "<<c<<endl<<"Salary = "<<d<<endl<<"Designition = "<<e<<endl;
+        } 
+    
+}; 
+class particular:public engineer
+{   
+    public:    
+    void engi()    
+    {       
+        engineer();    
+        
+    } 
+    
+}ch; 
+int main()
+{    
+    ch.name(); 
+    
+}
