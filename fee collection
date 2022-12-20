@@ -1,0 +1,57 @@
+#include<iostream>
+#include<string.h>
+#include<math.h>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    string s;
+    cout<<"Enter the student type"<<endl;
+    getline(cin,s);
+    float tu,bu,hos,total=0,b,c;
+    if(s=="MSDS")
+    {
+        cout<<"Enter tuition fee"<<endl;
+        cin>>tu;
+        cout<<"Enter bus fee"<<endl;
+        cin>>bu;
+        total=tu+bu;
+        cout<<"The fees to be paid by the student is Rs."<<fixed<<setprecision(2)<<total;
+    }
+    else if(s=="MSH")
+    {
+        cout<<"Enter tuition fee"<<endl;
+        cin>>tu;
+        cout<<"Enter hostel fee"<<endl;
+        cin>>hos;
+        total=tu+hos;
+        cout<<"The fees to be paid by the student is Rs."<<fixed<<setprecision(2)<<total;
+        
+    }
+    else if(s=="MGSDS")
+    {
+        cout<<"Enter tuition fee"<<endl;
+        cin>>tu;
+        cout<<"Enter bus fee"<<endl;
+        cin>>bu;
+        b=1.5*tu;
+        total=b+bu;
+        cout<<"The fees to be paid by the student is Rs."<<fixed<<setprecision(2)<<total;
+    }
+    else if(s=="MGSH")
+    {
+        cout<<"Enter tuition fee"<<endl;
+        cin>>tu;
+        cout<<"Enter hostel fee"<<endl;
+        cin>>hos;
+        c=1.5*tu;
+        total=c+hos;
+        cout<<"The fees to be paid by the student is Rs."<<fixed<<setprecision(2)<<total;
+    }
+    else
+    {
+        cout<<"Invalid Input..";
+    }
+    return 0;
+    
+}
