@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int m,d,y;
+    cin>>y>>m>>d;
+    if(y==m*d)
+    {
+        cout<<"its magic year "<<y;
+    }
+    else
+    {
+        cout<<"its not magic year";
+    }
+    return 0;
+    
+}
